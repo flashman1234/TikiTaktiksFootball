@@ -1,8 +1,8 @@
 //
 //  main.m
-//  TikiTaktiksFootball
+//  TTFootball
 //
-//  Created by Michal Thompson on 6/21/12.
+//  Created by Michal Thompson on 4/6/12.
 //  Copyright NA 2012. All rights reserved.
 //
 
