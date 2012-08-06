@@ -273,9 +273,20 @@
             
             if([actorA isKindOfClass:[Player class]])
             {               
-                float angle = selectededBody->GetAngle() - 90.0;
+                
+                float originalAngle = CC_RADIANS_TO_DEGREES(selectededBody->GetAngle());
+                QuietLog(@"originalAngle = %f", originalAngle);
+                
+                float addedAngle = 30.0f;
+                QuietLog(@"addedAngle = %f", addedAngle);
+                
+                float finalAngle = CC_DEGREES_TO_RADIANS(originalAngle) + CC_DEGREES_TO_RADIANS(addedAngle);    
+                QuietLog(@"finalAngle = %f", finalAngle);
+                
+                
                 b2Vec2 pos = selectededBody->GetPosition();
-                selectededBody->SetTransform(pos, angle);
+                selectededBody->SetTransform(pos, finalAngle);
+
                 
             } 
         }
